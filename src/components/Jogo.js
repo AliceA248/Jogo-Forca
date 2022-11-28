@@ -16,4 +16,3 @@ export default function Jogo({countErro, underline, gameStart,palavra,cor}) {
         </div>
     )
 }
-

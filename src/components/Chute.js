@@ -1,9 +1,8 @@
 export default function Chute({ chutePalavra, palavraChutada, confirmarPalavra, verdadeOuFalse, confirmar }) {
-
     return (
-        <div className="chute">
+        <div className="container-chute">
             <form onSubmit={confirmar}>
-                <div className="container-chute">
+                <div className="chute">
                     <p>Já sei a palavra!</p>
                     <input
                         disabled={verdadeOuFalse}

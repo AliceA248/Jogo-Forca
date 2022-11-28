@@ -99,6 +99,7 @@ function EndGame(novoArray, novoUnderline){
       setAtivarBtn('')
     }
   }
+  
   function confirmar(){
     if(chutePalavra === palavra){
       setTrueOrFalse(false)

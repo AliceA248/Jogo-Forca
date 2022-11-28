@@ -3,20 +3,19 @@
 *{
     font-family: 'Roboto', sans-serif;
     margin: 0px;
-    padding: 0px;
     box-sizing: border-box;
+    background-color: #FFFFFF;
 }
-
 
 .jogo{
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding: 59px 38px;
+    padding: 60px 38px;
 }
 .jogo img{
     width: 400px;
-    height: 466.67px;
+    height: 466px;
 }
 .jogo .btn{
     font-family: 'Roboto';
@@ -29,6 +28,13 @@
     background: #27AE60;
     border: none;
     border-radius: 8px;
+}
+.alfabeto{
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 .palavra-sorteada{
     position: absolute;
@@ -50,13 +56,7 @@
 .letras{
     display: flex;
 }
-.alfabeto{
-    max-width: 700px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-}
+
 .btn{
     width: 40px;
     height: 40px;
@@ -99,14 +99,14 @@
 .chute button{
     width: 100px;
     height: 40px;
-    margin-left: 12px;
+    margin-left: 13px;
     font-weight: 700;
     font-size: 16px;
     text-align: center;
     color: #3C76A1;
     background: #E1ECF4;
     border: 1px solid #7AA7C7;
-    border-radius: 3px;
+    border-radius: 4px;
 }
 
 button{
