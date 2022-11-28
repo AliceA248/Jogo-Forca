@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.jogo{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 59px 38px;
+}
+.jogo img{
+    width: 400px;
+    height: 466.67px;
+}
+.jogo .btn{
+    font-family: 'Roboto';
+    width: 200px;
+    height: 60px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #27AE60;
+    border: none;
+    border-radius: 8px;
+}
+.palavra-sorteada{
+    position: absolute;
+    bottom: 80px;
+    right: 61px;
+    display:  flex;
+    gap: 8px;
+}
+.card{
+   font-size: 5rem;
+}
+.card.red{
+    color: red;
+}
+.card.green{
+    color: #27AE60;
+}
+
+.letras{
+    display: flex;
+}
+.alfabeto{
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.btn{
+    width: 40px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #798A9F;
+    background: #9FAAB5;
+    border: 1px solid #7AA7C7;
+    border-radius: 3px;
+}
+.btn.ativado{
+    background-color:#E1ECF4;
+}
+.container-chute{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chute{
+    display: flex;
+    align-items: center;
+    padding: 65px 0px;
+}
+.chute p{
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 12px;
+    color: #000000;
+}
+.chute input{
+    width: 353px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+}
+.chute button{
+    width: 100px;
+    height: 40px;
+    margin-left: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #3C76A1;
+    background: #E1ECF4;
+    border: 1px solid #7AA7C7;
+    border-radius: 3px;
+}
+
+button{
+    cursor: pointer;
+}
