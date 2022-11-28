@@ -7,7 +7,7 @@ export default function Jogo({countErro, underline, gameStart,palavra,cor}) {
             </div>
             <div className="escolherPalavra">
                 <div>
-                    <button data-test="choose-word" className="btn" onClick={gameStart}>Escolher Palavra</button>
+                    <button data-test="choose-word" className="botao" onClick={gameStart}>Escolher Palavra</button>
                 </div>
                 <div className="palavra-sorteada">
                     <div data-answer={palavra} data-test="word" className={`card ${cor}`}>{countErro === 6 ? palavra : underline}</div>

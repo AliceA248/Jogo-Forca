@@ -1,4 +1,4 @@
-export default function Letras({ listaLetras, ativarBtn, trueOrFalse,letraEscolhida}) 
+export default function Letras({ listaLetras, botao, trueOrFalse,letraEscolhida}) 
 {
    const alfabeto = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
    
@@ -9,9 +9,9 @@ export default function Letras({ listaLetras, ativarBtn, trueOrFalse,letraEscolh
                <button
                    data-test="letter"
                    disabled={!listaLetras.includes(a)? trueOrFalse : true} 
-                   className={`btn ${listaLetras.includes(a) ? "" : ativarBtn}`} 
+                   className={`botao ${listaLetras.includes(a) ? "" : botao}`} 
                    onClick={() => letraEscolhida(a)}>{a}
                </button>)}
            </div>
        </div>
-   )    }
+   )}

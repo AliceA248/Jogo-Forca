@@ -13,7 +13,7 @@ export default function App() {
   const [underline, setUnderline] = useState([]);
   const [palavra, setPalavra] = useState('')
   const [chutePalavra, setChutePalavra] = useState('')
-  const [ativarBtn, setAtivarBtn] = useState("");
+  const [botao, setbotao] = useState("");
   const [TrueOrFalse, setTrueOrFalse] = useState(true);
   const [cor, setCor] = useState('')
   const [countErro, setcountErro] = useState(0);
@@ -27,11 +27,11 @@ export default function App() {
         const listUnderline = arrayPalavra.map(_l => "_ ");
         setUnderline(listUnderline);
         setTrueOrFalse(false)
-        setAtivarBtn('ativado')
+        setbotao('ativado')
         setcountErro(0)
         setCor('')
-        let newarr = [];
-        setListaLetras(newarr);
+        let novoArr = [];
+        setListaLetras(novoArr);
   };
 
   function letraEscolhida(letra) {
@@ -64,7 +64,7 @@ export default function App() {
             if(contador === 6){
               setCor('red')
               setTrueOrFalse(true)
-              setAtivarBtn('')
+              setbotao('')
             }
         }
     }
@@ -82,13 +82,13 @@ function checkPalavra(){
       setUnderline([...palavra])
       setCor('green')
       setTrueOrFalse(true)
-      setAtivarBtn('')
+      setbotao('')
     }else{
       setUnderline([...palavra])
       setcountErro(6)
       setCor('red')
       setTrueOrFalse(true)
-      setAtivarBtn('')
+      setbotao('')
     }
 }
 
@@ -96,10 +96,9 @@ function EndGame(novoArray, novoUnderline){
     if(novoArray.toString() === novoUnderline.toString()){
       setCor('green')
       setTrueOrFalse(true)
-      setAtivarBtn('')
+      setbotao('')
     }
   }
-  
   function confirmar(){
     if(chutePalavra === palavra){
       setTrueOrFalse(false)
@@ -124,7 +123,7 @@ function EndGame(novoArray, novoUnderline){
       />
       <Letras
         listaLetras={listaLetras}
-        ativarBtn={ativarBtn}
+        botao={botao}
         TrueOrFalse={TrueOrFalse}
         letraEscolhida={letraEscolhida}
       />
