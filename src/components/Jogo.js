@@ -1,10 +1,4 @@
-export default function Jogo({
-    countErro,
-    underline,
-    gameStart,
-    palavra,
-    cor
- }) {
+export default function Jogo({countErro, underline, gameStart,palavra,cor}) {
        
     return (
         <div className="jogo">

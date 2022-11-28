@@ -1,23 +1,25 @@
-export default function Chute({chutePalavra, palavraChutada, confirmar,trueOrFalse }){
+export default function Chute({ chutePalavra, palavraChutada, confirmarPalavra, verdadeOuFalse, confirmar }) {
 
-    return(
-        <div className="container-chute">
-            <div className="chute">
-                <p>Já sei a palavra!</p>
-                <input 
-                    disabled={trueOrFalse}
-                    data-test="guess-input"
-                    type="text"
-                    onChange={palavraChutada}
-                    value={chutePalavra}
-                />
-                <button  
-                    disabled={trueOrFalse} 
-                    data-test="guess-button" 
-                    onClick={confirmar}
+    return (
+        <div className="chute">
+            <form onSubmit={confirmar}>
+                <div className="container-chute">
+                    <p>Já sei a palavra!</p>
+                    <input
+                        disabled={verdadeOuFalse}
+                        data-test="guess-input"
+                        type="text"
+                        onChange={(e) => palavraChutada(e)}
+                        value={chutePalavra}
+                    />
+                    <button
+                        disabled={verdadeOuFalse}
+                        data-test="guess-button"
+                        type="submit"
                     >Chutar
-                </button>
-            </div>
+                    </button>
+                </div>
+            </form>
         </div>
     )
 }

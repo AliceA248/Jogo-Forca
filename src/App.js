@@ -49,6 +49,7 @@ export default function App() {
       const novoArray = [...palavra];
       const novoUnderline = [...underline];
       novoArray.forEach((l, i) => {
+
         if(l === ltr){
           novoUnderline[i] = ltr;
           setUnderline([...novoUnderline])
@@ -98,6 +99,18 @@ function EndGame(novoArray, novoUnderline){
       setAtivarBtn('')
     }
   }
+  function confirmar(){
+    if(chutePalavra === palavra){
+      setTrueOrFalse(false)
+      setUnderline(palavra)
+      setCor('green')
+    }else{
+      setTrueOrFalse(false)
+      setUnderline(palavra)
+      setCor('red')
+    }
+  }
+
 
   return (
     <>
@@ -114,11 +127,13 @@ function EndGame(novoArray, novoUnderline){
         TrueOrFalse={TrueOrFalse}
         letraEscolhida={letraEscolhida}
       />
-      <Chute
+
+        <Chute
         chutePalavra={chutePalavra}
         checkPalavra={checkPalavra}
         palavraChutada={palavraChutada}
         TrueOrFalse={TrueOrFalse}
+        confirmar={confirmar}
       />
     </>
   );
